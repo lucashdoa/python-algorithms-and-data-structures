@@ -12,6 +12,6 @@ The course is ministered by Treehouse. But you can find it for free [here](https
 
 ## 🐾 Course Completion
 
-- [x] ntroduction to Algorithms
+- [x] Introduction to Algorithms
 - [ ] Introduction to Data Structures
 - [ ] Algorithms: Sorting and Searching
