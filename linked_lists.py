@@ -67,7 +67,7 @@ class SinglyLinkedList:
         """
         if index == 0:
             self.add(data)
-        else index > 0:
+        elif index > 0:
             new = Node(data)
             position = index
             current = self.head
@@ -103,6 +103,37 @@ class SinglyLinkedList:
                 current = current.next_node
         return current
 
+    def removeIndex(self, index):
+        """
+        Removes node at given index
+        """
+        current_node = self.head
+        previous = None
+        deleted_node = None
+        last_index = self.size() - 1 
+
+        if index < 0 or index > self.size() - 1:
+            print("Index out of range of the list!")
+            return None
+        else:
+            if index == 0:
+                deleted_node = self.head
+                self.head = current_node.next_node
+            elif index == last_index:
+                while index > 1:
+                    current_node = current_node.next_node
+                    index -= 1
+                deleted_node = current_node.next_node
+                current_node.next_node = None
+            else:
+                while index > 0:
+                    previous = current_node
+                    current_node = current_node.next_node
+                    index -= 1
+                deleted_node = current_node
+                previous.next_node = current_node.next_node
+        return deleted_node
+    
     def __repr__(self):
         """
         Return a string representation of the list
