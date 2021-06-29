@@ -14,4 +14,6 @@ The course is ministered by Treehouse. But you can find it for free [here](https
 
 - [x] Introduction to Algorithms
 - [x] Introduction to Data Structures
-- [ ] Algorithms: Sorting and Searching
+- [x] Algorithms: Sorting and Searching
+
+🏆 Course Finished!
