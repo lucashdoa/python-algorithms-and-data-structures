@@ -8,7 +8,7 @@ def quick_sort(list):
     greater_than_pivot = []
     pivot = list[0]
     for index in range(1, len(list)):
-        if list[index] > pivot:
+        if list[index] >= pivot:
             greater_than_pivot.append(list[index])
         else:
             less_than_pivot.append(list[index])
